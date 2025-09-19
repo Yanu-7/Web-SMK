@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita & Kegiatan - SMK Ma'arif NU Margasari</title>
+    <meta name="description" content="Ikuti berita terkini, kegiatan sekolah, prestasi siswa, dan update terbaru dari SMK Ma'arif NU Margasari. Temukan berbagai aktivitas akademik, keislaman, dan kemitraan industri." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsmkmaari1525back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-subtle transition-all duration-300">
+        <nav class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            <path d="M12 7v5l4-2-4-3z" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="font-poppins font-bold text-lg text-primary">SMK Ma'arif NU</h1>
+                        <p class="text-xs text-text-secondary">Margasari</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-primary hover:text-primary transition-colors duration-300">Beranda</a>
+                    <div class="relative group">
+                        <a href="program_keahlian.html" class="text-text-primary hover:text-primary transition-colors duration-300 flex items-center">
+                            Program Keahlian
+                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <!-- Mega Menu -->
+                        <div class="absolute top-full left-0 w-96 bg-white shadow-strong rounded-lg p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                            <div class="grid grid-cols-1 gap-4">
+                                <a href="program_keahlian.html" class="flex items-center p-3 rounded-lg hover:bg-primary-50 transition-colors duration-300">
+                                    <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Teknik Komputer Jaringan</h4>
+                                        <p class="text-sm text-text-secondary">Networking & IT Support</p>
+                                    </div>
+                                </a>
+                                <a href="program_keahlian.html" class="flex items-center p-3 rounded-lg hover:bg-primary-50 transition-colors duration-300">
+                                    <div class="w-10 h-10 bg-secondary-100 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-secondary-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Akuntansi & Keuangan</h4>
+                                        <p class="text-sm text-text-secondary">Financial Management</p>
+                                    </div>
+                                </a>
+                                <a href="program_keahlian.html" class="flex items-center p-3 rounded-lg hover:bg-primary-50 transition-colors duration-300">
+                                    <div class="w-10 h-10 bg-accent-100 rounded-lg flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Teknik Otomotif</h4>
+                                        <p class="text-sm text-text-secondary">Automotive Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="tentang_sekolah.html" class="text-text-primary hover:text-primary transition-colors duration-300">Tentang Sekolah</a>
+                    <a href="fasilitas.html" class="text-text-primary hover:text-primary transition-colors duration-300">Fasilitas</a>
+                    <a href="berita_kegiatan.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Berita & Kegiatan</a>
+                    <a href="pendaftaran.html" class="btn-primary">Daftar Sekarang</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-2">
+                    <a href="homepage.html" class="block px-4 py-2 text-text-primary hover:text-primary">Beranda</a>
+                    <a href="program_keahlian.html" class="block px-4 py-2 text-text-primary hover:text-primary">Program Keahlian</a>
+                    <a href="tentang_sekolah.html" class="block px-4 py-2 text-text-primary hover:text-primary">Tentang Sekolah</a>
+                    <a href="fasilitas.html" class="block px-4 py-2 text-text-primary hover:text-primary">Fasilitas</a>
+                    <a href="berita_kegiatan.html" class="block px-4 py-2 text-primary font-semibold">Berita & Kegiatan</a>
+                    <a href="pendaftaran.html" class="block px-4 py-2 btn-primary text-center">Daftar Sekarang</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-primary to-primary-700 text-white relative overflow-hidden">
+        <!-- Islamic Pattern Background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="header-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <polygon points="10,1 4,7 4,13 10,19 16,13 16,7" fill="white" opacity="0.3"/>
+                        <circle cx="10" cy="10" r="3" fill="none" stroke="white" stroke-width="0.5" opacity="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#header-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center" data-aos="fade-up">
+                <div class="mb-6">
+                    <p class="font-arabic text-xl mb-2 text-secondary">أَخْبَارٌ وَأَنْشِطَةٌ</p>
+                </div>
+                <h1 class="font-poppins font-bold text-4xl md:text-5xl mb-6">Berita & Kegiatan</h1>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Ikuti perkembangan terkini, prestasi gemilang, dan berbagai kegiatan inspiratif dari keluarga besar SMK Ma'arif NU Margasari
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-8 bg-surface border-b border-border-light">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="relative flex-1 max-w-md">
+                    <input type="text" placeholder="Cari berita atau kegiatan..." class="input-field pl-12 pr-4" id="search-input" />
+                    <svg class="w-5 h-5 text-text-secondary absolute left-4 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+
+                <!-- Reset Filter -->
+                <button class="text-primary hover:text-primary-700 font-semibold transition-colors duration-300" id="reset-filters">
+                    <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    Reset Filter
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="mb-12" data-aos="fade-up">
+                <h2 class="font-poppins font-bold text-3xl text-primary mb-2">Berita Utama</h2>
+                <p class="text-text-secondary">Sorotan utama dari kegiatan dan prestasi terbaru</p>
+            </div>
+
+            <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2940&auto=format&fit=crop" alt="Siswa TKJ Juara Nasional" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm font-semibold">Prestasi Akademik</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="flex space-x-2">
+                                <button class="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
+                                    </svg>
+                                </button>
+                                <button class="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <div class="mb-4">
+                            <div class="flex items-center space-x-4 text-sm text-text-secondary mb-3">
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    12 September 2025
+                                </span>
+                                <span class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.414-1.414L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    5 menit baca
+                                </span>
+                            </div>
+                            <h3 class="font-poppins font-bold text-2xl md:text-3xl text-primary mb-4">
+                                Tim TKJ SMK Ma'arif NU Margasari Raih Juara 1 Lomba Networking Tingkat Nasional
+                            </h3>
+                            <p class="text-text-secondary text-lg leading-relaxed mb-6">
+                                Prestasi membanggakan kembali ditorehkan siswa SMK Ma'arif NU Margasari. Tim yang terdiri dari Ahmad Fauzi, Siti Nurhaliza, dan Budi Santoso berhasil meraih juara pertama dalam Lomba Networking Competition tingkat nasional yang diselenggarakan di Jakarta. Kompetisi yang diikuti 150 tim dari seluruh Indonesia ini menguji kemampuan teknis dan inovasi dalam bidang jaringan komputer.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop" alt="Penulis" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <div>
+                                        <p class="font-semibold text-primary">Humas SMK Ma'arif NU</p>
+                                        <p class="text-sm text-text-secondary">Tim Redaksi</p>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn-primary">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="font-poppins font-bold text-3xl text-primary mb-2">Berita Terkini</h2>
+                    <p class="text-text-secondary">Update terbaru dari berbagai kegiatan sekolah</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <select class="input-field w-auto" id="sort-select">
+                        <option value="newest">Terbaru</option>
+                        <option value="oldest">Terlama</option>
+                        <option value="popular">Terpopuler</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="news-grid">
+                <!-- News Card 1 -->
+                <article class="card group hover:scale-105 transform transition-all duration-500 news-item" data-category="activities" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=2940&auto=format&fit=crop" alt="Kegiatan Ramadhan" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/06/15/student-1867036_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Kegiatan Siswa</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                </svg>
+                                10 September 2025
+                            </span>
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                245 views
+                            </span>
+                        </div>
+                        <h3 class="font-poppins font-bold text-xl text-primary group-hover:text-primary-700 transition-colors duration-300">
+                            Peringatan Maulid Nabi Muhammad SAW 1447 H
+                        </h3>
+                        <p class="text-text-secondary">
+                            Seluruh keluarga besar SMK Ma'arif NU Margasari memperingati Maulid Nabi Muhammad SAW dengan serangkaian kegiatan islami yang penuh makna dan hikmah...
+                        </p>
+                        <div class="flex items-center justify-between pt-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm text-text-secondary">3 menit baca</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300">
+                                Baca Selengkapnya →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Card 2 -->
+                <article class="card group hover:scale-105 transform transition-all duration-500 news-item" data-category="partnership" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2926&auto=format&fit=crop" alt="Kemitraan Industri" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm font-semibold">Kemitraan Industri</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                </svg>
+                                8 September 2025
+                            </span>
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                189 views
+                            </span>
+                        </div>
+                        <h3 class="font-poppins font-bold text-xl text-primary group-hover:text-primary-700 transition-colors duration-300">
+                            MoU Kerjasama dengan PT Bank Mandiri Tbk
+                        </h3>
+                        <p class="text-text-secondary">
+                            SMK Ma'arif NU Margasari menandatangani Memorandum of Understanding dengan PT Bank Mandiri Tbk untuk program magang dan rekrutmen lulusan program Akuntansi...
+                        </p>
+                        <div class="flex items-center justify-between pt-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm text-text-secondary">4 menit baca</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300">
+                                Baca Selengkapnya →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Card 3 -->
+                <article class="card group hover:scale-105 transform transition-all duration-500 news-item" data-category="alumni" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2940&auto=format&fit=crop" alt="Alumni Success" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-100 text-primary px-3 py-1 rounded-full text-sm font-semibold">Update Alumni</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                </svg>
+                                5 September 2025
+                            </span>
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                156 views
+                            </span>
+                        </div>
+                        <h3 class="font-poppins font-bold text-xl text-primary group-hover:text-primary-700 transition-colors duration-300">
+                            Alumni TKJ Raih Promosi Sebagai IT Manager
+                        </h3>
+                        <p class="text-text-secondary">
+                            Ahmad Fauzi, alumni TKJ angkatan 2020, baru saja meraih promosi sebagai IT Manager di PT Telkom Indonesia. Pencapaian ini membuktikan kualitas pendidikan SMK Ma'arif NU...
+                        </p>
+                        <div class="flex items-center justify-between pt-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm text-text-secondary">2 menit baca</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300">
+                                Baca Selengkapnya →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Card 4 -->
+                <article class="card group hover:scale-105 transform transition-all duration-500 news-item" data-category="islamic" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=2939&auto=format&fit=crop" alt="Kegiatan Islami" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/8923775/pexels-photo-8923775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent-100 text-accent-700 px-3 py-1 rounded-full text-sm font-semibold">Kegiatan Islami</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                </svg>
+                                3 September 2025
+                            </span>
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                198 views
+                            </span>
+                        </div>
+                        <h3 class="font-poppins font-bold text-xl text-primary group-hover:text-primary-700 transition-colors duration-300">
+                            Pesantren Kilat Ramadhan 1447 H
+                        </h3>
+                        <p class="text-text-secondary">
+                            Program Pesantren Kilat diselenggarakan selama bulan Ramadhan dengan berbagai kegiatan spiritual dan edukasi untuk memperkuat iman dan takwa siswa...
+                        </p>
+                        <div class="flex items-center justify-between pt-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm text-text-secondary">5 menit baca</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300">
+                                Baca Selengkapnya →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Card 5 -->
+                <article class="card group hover:scale-105 transform transition-all duration-500 news-item" data-category="academic" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop" alt="Prestasi Akademik" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pixabay.com/photo/2016/03/02/20/13/sunset-1232594_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm font-semibold">Prestasi Akademik</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                </svg>
+                                1 September 2025
+                            </span>
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                267 views
+                            </span>
+                        </div>
+                        <h3 class="font-poppins font-bold text-xl text-primary group-hover:text-primary-700 transition-colors duration-300">
+                            Siswa Otomotif Juara LKS Tingkat Provinsi
+                        </h3>
+                        <p class="text-text-secondary">
+                            Budi Santoso dari program Teknik Otomotif berhasil meraih juara 1 dalam Lomba Kompetensi Siswa (LKS) tingkat Provinsi Jawa Tengah bidang Automotive Technology...
+                        </p>
+                        <div class="flex items-center justify-between pt-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm text-text-secondary">3 menit baca</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300">
+                                Baca Selengkapnya →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- News Card 6 -->
+                <article class="card group hover:scale-105 transform transition-all duration-500 news-item" data-category="activities" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2942&auto=format&fit=crop" alt="Kegiatan Ekstrakurikuler" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Kegiatan Siswa</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                </svg>
+                                30 Agustus 2025
+                            </span>
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                                134 views
+                            </span>
+                        </div>
+                        <h3 class="font-poppins font-bold text-xl text-primary group-hover:text-primary-700 transition-colors duration-300">
+                            Festival Seni dan Budaya Sekolah 2025
+                        </h3>
+                        <p class="text-text-secondary">
+                            Gelaran Festival Seni dan Budaya tahunan menampilkan berbagai kreativitas siswa dalam bidang seni, musik, tari, dan budaya lokal dengan nuansa Islami...
+                        </p>
+                        <div class="flex items-center justify-between pt-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm text-text-secondary">4 menit baca</span>
+                            </div>
+                            <a href="javascript:void(0)" class="text-primary font-semibold hover:text-primary-700 transition-colors duration-300">
+                                Baca Selengkapnya →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12" data-aos="fade-up">
+                <button class="btn-primary" id="load-more-btn">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Muat Lebih Banyak
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="font-poppins font-bold text-3xl text-primary mb-6">Galeri Foto Kegiatan</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Dokumentasi visual dari berbagai kegiatan dan momen berharga di SMK Ma'arif NU Margasari
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2940&auto=format&fit=crop" alt="Kegiatan Sekolah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=2940&auto=format&fit=crop" alt="Kegiatan Islami" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/06/15/student-1867036_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2942&auto=format&fit=crop" alt="Ekstrakurikuler" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop" alt="Prestasi Siswa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pixabay.com/photo/2016/03/02/20/13/sunset-1232594_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2926&auto=format&fit=crop" alt="Kemitraan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2940&auto=format&fit=crop" alt="Alumni" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=2939&auto=format&fit=crop" alt="Kegiatan Ramadhan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/8923775/pexels-photo-8923775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg aspect-square group" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2940&auto=format&fit=crop" alt="Praktik Otomotif" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8" data-aos="fade-up">
+                <a href="javascript:void(0)" class="btn-secondary">
+                    Lihat Semua Foto
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-16 bg-primary text-white relative overflow-hidden">
+        <!-- Islamic Pattern Background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="newsletter-pattern" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
+                        <circle cx="12.5" cy="12.5" r="8" fill="none" stroke="white" stroke-width="0.5"/>
+                        <polygon points="12.5,4.5 8.5,8.5 8.5,16.5 12.5,20.5 16.5,16.5 16.5,8.5" fill="white" opacity="0.2"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#newsletter-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div data-aos="fade-up">
+                <h2 class="font-poppins font-bold text-3xl md:text-4xl mb-6">
+                    Jangan Lewatkan Berita Terbaru
+                </h2>
+                <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                    Berlangganan newsletter kami untuk mendapatkan update terkini tentang kegiatan, prestasi, dan informasi penting dari SMK Ma'arif NU Margasari
+                </p>
+                <form class="max-w-md mx-auto flex gap-4">
+                    <input type="email" placeholder="Masukkan email Anda..." class="flex-1 px-4 py-3 rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-secondary" />
+                    <button type="submit" class="btn-secondary whitespace-nowrap">
+                        Berlangganan
+                    </button>
+                </form>
+                <p class="text-sm opacity-75 mt-4">
+                    Kami menghormati privasi Anda. Unsubscribe kapan saja.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- School Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                <path d="M12 7v5l4-2-4-3z" fill="white" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-poppins font-bold text-lg">SMK Ma'arif NU</h3>
+                            <p class="text-sm opacity-75">Margasari</p>
+                        </div>
+                    </div>
+                    <p class="text-sm opacity-75 mb-4">
+                        Mencetak generasi unggul, berkarakter, dan berakhlak mulia melalui pendidikan vokasi berkualitas tinggi dengan nilai-nilai Islam.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.221.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.956-.11-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.221.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.544 3.571.544 6.624 0 11.99-5.367 11.99-11.988C24.49 5.896 19.344.75 12.99.75z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-poppins font-bold text-lg mb-6">Menu Utama</h4>
+                    <ul class="space-y-3">
+                        <li><a href="homepage.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Beranda</a></li>
+                        <li><a href="tentang_sekolah.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Tentang Sekolah</a></li>
+                        <li><a href="program_keahlian.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Program Keahlian</a></li>
+                        <li><a href="fasilitas.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Fasilitas</a></li>
+                        <li><a href="berita_kegiatan.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Berita & Kegiatan</a></li>
+                        <li><a href="pendaftaran.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Pendaftaran</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h4 class="font-poppins font-bold text-lg mb-6">Program Keahlian</h4>
+                    <ul class="space-y-3">
+                        <li><a href="program_keahlian.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Teknik Komputer Jaringan</a></li>
+                        <li><a href="program_keahlian.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Akuntansi & Keuangan</a></li>
+                        <li><a href="program_keahlian.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Teknik Otomotif</a></li>
+                        <li><a href="program_keahlian.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Teknik Sepeda Motor</a></li>
+                        <li><a href="program_keahlian.html" class="text-sm opacity-75 hover:opacity-100 hover:text-secondary transition-colors duration-300">Perawatan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-poppins font-bold text-lg mb-6">Kontak Kami</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <div>
+                                <p class="text-sm opacity-75">Jl. Raya Margasari No. 123</p>
+                                <p class="text-sm opacity-75">Margasari, Tegal, Jawa Tengah 52454</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <p class="text-sm opacity-75">(0283) 123-4567</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <p class="text-sm opacity-75">info@smkmaarifmargasari.sch.id</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-12 pt-8 text-center">
+                <p class="text-sm opacity-75">
+                    © 2025 SMK Ma'arif NU Margasari. All Rights Reserved. | 
+                    <span class="font-arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const newsItems = document.querySelectorAll('.news-item');
+        const resetBtn = document.getElementById('reset-filters');
+        const searchInput = document.getElementById('search-input');
+        const sortSelect = document.getElementById('sort-select');
+
+        // Filter by category
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+                
+                newsItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                        gsap.fromTo(item, 
+                            { opacity: 0, y: 20 }, 
+                            { opacity: 1, y: 0, duration: 0.5 }
+                        );
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            newsItems.forEach(item => {
+                const title = item.querySelector('h3').textContent.toLowerCase();
+                const content = item.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Reset filters
+        resetBtn.addEventListener('click', () => {
+            // Reset active filter
+            filterBtns.forEach(b => b.classList.remove('active'));
+            filterBtns[0].classList.add('active');
+            
+            // Clear search
+            searchInput.value = '';
+            
+            // Show all items
+            newsItems.forEach(item => {
+                item.style.display = 'block';
+            });
+            
+            // Reset sort
+            sortSelect.value = 'newest';
+        });
+
+        // Load more functionality
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        loadMoreBtn.addEventListener('click', () => {
+            // Simulate loading more content
+            loadMoreBtn.innerHTML = `
+                <svg class="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                </svg>
+                Memuat...
+            `;
+            
+            setTimeout(() => {
+                loadMoreBtn.innerHTML = `
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Muat Lebih Banyak
+                `;
+            }, 2000);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/98');
+                header.classList.remove('bg-white/95');
+            } else {
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white/98');
+            }
+        });
+
+        // Newsletter form
+        const newsletterForm = document.querySelector('form');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('input[type="email"]').value;
+            
+            if (email) {
+                alert('Terima kasih! Anda telah berlangganan newsletter kami.');
+                e.target.reset();
+            }
+        });
+    </script>
+
+    <style>
+        .filter-btn {
+            @apply px-4 py-2 rounded-lg border border-border-light text-text-secondary hover:border-primary hover:text-primary transition-all duration-300 flex items-center;
+        }
+        
+        .filter-btn.active {
+            @apply bg-primary text-white border-primary;
+        }
+        
+        .news-item {
+            transition: all 0.3s ease;
+        }
+        
+        .aspect-square {
+            aspect-ratio: 1 / 1;
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "short_name": "smk-ma-arif-nu-margasari-digital-campus",
+  "name": "smk-ma-arif-nu-margasari-digital-campus",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "indera/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
